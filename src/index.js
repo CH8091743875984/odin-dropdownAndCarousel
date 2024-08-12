@@ -1,3 +1,3 @@
-import './style.css';
+import "./style.css";
 
-console.log('calling from index.js')
+console.log("calling from index.js");
