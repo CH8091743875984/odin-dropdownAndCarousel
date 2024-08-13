@@ -1,12 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<script defer src="main.js"></script></head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  <script defer src="main.js"></script></head>
+  <body>
     <script src="index.js"></script>
-    <div>hello</div>
-</body>
+    <div class="header">
+      Top Header
+      <div class="menu">
+        <button class="menuButton">
+          <i class="menuIcon material-icons show">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+        <div class="menuDropdown">
+          <ul>
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Products</a></li>
+            <li><a class="menuItem" href="#">Cart</a></li>
+            <li><a class="menuItem" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      Website Body
+      <div class="carouselContainer">
+        Carousel
+        <div class="activeImage">
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd55a67c95634000862d22a/16:9/w_1920,c_limit/1%20145%20a%20Morris%20Greenwald.jpg"
+          />
+        </div>
+        <div class="imageContainer">
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd55a67c95634000862d22a/16:9/w_1920,c_limit/1%20145%20a%20Morris%20Greenwald.jpg"
+          />
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd55fa7538e390009607ad2/master/w_1600,c_limit/2-096-7-Kaufmann.jpg"
+          />
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd55fdd340bed00085b4b8a/master/w_1600,c_limit/3-031-b-Dowell.jpg"
+          />
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd5604a33888f0008dd492a/master/w_1600,c_limit/4-304-5-Ugalde.jpg"
+          />
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd5608da2fd220009276f48/master/w_1600,c_limit/5-035-b-Berkeley.jpg"
+          />
+          <img
+            src="https://media.architecturaldigest.com/photos/5dd560c9538e390009607ad4/master/w_1600,c_limit/6-325-b-Gauthier.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

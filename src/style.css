@@ -1,3 +1,67 @@
 body {
+  background-color: rgb(236, 236, 236);
+}
+
+.header {
   background-color: lightgray;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 5px;
+}
+
+.menuDropdown {
+  display: none;
+  position: absolute;
+  top: 100;
+  right: 0;
+  margin: 0px 10px 0px 0px;
+  background-color: lightblue;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* carousel classes */
+
+.carouselContainer {
+  margin: 50px;
+  height: 300px;
+  width: 500px;
+  background-color: beige;
+  overflow: hidden;
+}
+
+.activeImage > img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imageContainer {
+  width: 200vw;
+}
+
+.imageContainer > img {
+  width: 150px;
+  height: 75px;
+  object-fit: cover;
+  object-position: center;
 }
