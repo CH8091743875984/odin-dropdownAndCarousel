@@ -31,6 +31,18 @@ function setActiveImage() {
   activeImage.setAttribute("src", imageSrc);
 }
 
+export function reorderToSpecific(imageObject) {
+  const container = document.querySelector(".imageContainer");
+  const images = Array.from(container.querySelectorAll("img"));
+
+  let index = images.indexOf(imageObject);
+
+  while (index > 0) {
+    shiftLeftAndSetActive();
+    index--;
+  }
+}
+
 export function shiftLeftAndSetActive() {
   reorderImagesLeft();
   setActiveImage();
@@ -45,6 +57,4 @@ export function startSlideshow() {
   setInterval(shiftLeftAndSetActive, 5000);
 }
 
-// set border on img if active
-
-// set active and reorder images if image is clicked on - need to change everything up there
+// set border on img if active - or darken it

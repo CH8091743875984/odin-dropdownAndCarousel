@@ -3,6 +3,7 @@ import {
   shiftLeftAndSetActive,
   shiftRightAndSetActive,
   startSlideshow,
+  reorderToSpecific,
 } from "./carousel";
 
 console.log("calling from index.js");
@@ -47,10 +48,18 @@ window.onclick = function (event) {
   }
 };
 
+const images = document.querySelectorAll(".imageContainer img");
+
+images.forEach((image) => {
+  image.addEventListener("click", function (event) {
+    reorderToSpecific(event.target);
+  });
+});
+
 const rightButton = document.querySelector("#shiftImageRight");
 rightButton.addEventListener("click", shiftLeftAndSetActive);
 
 const leftButton = document.querySelector("#shiftImageLeft");
 leftButton.addEventListener("click", shiftRightAndSetActive);
 
-startSlideshow();
+// startSlideshow();
