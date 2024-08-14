@@ -1,4 +1,9 @@
 import "./style.css";
+import {
+  shiftLeftAndSetActive,
+  shiftRightAndSetActive,
+  startSlideshow,
+} from "./carousel";
 
 console.log("calling from index.js");
 
@@ -41,3 +46,11 @@ window.onclick = function (event) {
     }
   }
 };
+
+const rightButton = document.querySelector("#shiftImageRight");
+rightButton.addEventListener("click", shiftLeftAndSetActive);
+
+const leftButton = document.querySelector("#shiftImageLeft");
+leftButton.addEventListener("click", shiftRightAndSetActive);
+
+startSlideshow();
